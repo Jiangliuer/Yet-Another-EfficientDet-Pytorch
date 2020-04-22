@@ -310,7 +310,7 @@ class Regressor(nn.Module):
 
     def __init__(self, in_channels, num_anchors, num_layers, onnx_export=False):
         super(Regressor, self).__init__()
-        self.num_layers = num_layers
+        self.num_anchors = num_anchors
         self.num_layers = num_layers
 
         self.conv_list = nn.ModuleList(
